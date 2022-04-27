@@ -1,0 +1,39 @@
+body{
+    background-image: url('images/AdobeStock_409378433.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+    }
+
+  h1 {
+    margin-top: 20px;
+    animation-name: moveHeadline;
+    animation-duration: 4s;
+    position: relative;
+    text-align: center;
+  
+    }
+
+ @keyframes moveHeadline {
+    from {margin-top: 50vh;}
+    to {margin-top: 20px;}
+  
+    }
+  
+  #app{
+      margin-top: 200px;
+      text-align: center;
+      position: relative;
+      opacity: 0;
+      
+    }
+
+    #app.is-loaded{
+        transition: all 3s;
+        transition-delay: 4s;
+        opacity: 1;
+    }
+
+   
+    
+  

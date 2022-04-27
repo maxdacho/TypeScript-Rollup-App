@@ -1,0 +1,1 @@
+document.getElementById("app").classList.add('is-loaded');

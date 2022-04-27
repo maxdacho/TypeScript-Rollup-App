@@ -4,8 +4,8 @@ let buttonGenerateRandomNumber = document.getElementById('generateRandomNumber')
 
 //Elemente zur Erstellung einer Liste mit Namen nach User Eingabe
 let inputFieldGiveNames = document.getElementById('addName') as HTMLInputElement;
-let outputFieldNamesfromUserEntry = document.getElementById('outputNamesFromList') as HTMLElement;
-let buttonOutputFieldGiveNamestoList = document.getElementById('buttonPutNameToList') as HTMLButtonElement;
+let outputFieldNamesFromUserEntry = document.getElementById('outputNamesFromList') as HTMLElement;
+let buttonOutputFieldGiveNamesToList = document.getElementById('buttonPutNameToList') as HTMLButtonElement;
 
 
-export{outputFieldRandomNumber, buttonGenerateRandomNumber};
+export{outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList};

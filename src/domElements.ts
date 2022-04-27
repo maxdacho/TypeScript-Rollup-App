@@ -7,5 +7,9 @@ let inputFieldGiveNames = document.getElementById('addName') as HTMLInputElement
 let outputFieldNamesFromUserEntry = document.getElementById('outputNamesFromList') as HTMLElement;
 let buttonOutputFieldGiveNamesToList = document.getElementById('buttonPutNameToList') as HTMLButtonElement;
 
+//Elemente zur Ausgabe eines zufälligen Namens aus der zuvor erstellten Liste
+let outputFieldRandomNameFromList = document.getElementById('outputRandomNameFromList') as HTMLElement;
+let buttonGetRandomNameFromList = document.getElementById('buttonGetRandomNameFromList') as HTMLButtonElement;
 
-export{outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList};
+
+export{outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList};

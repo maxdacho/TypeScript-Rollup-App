@@ -89,6 +89,7 @@ body{
       text-align: center;
       margin-top: 30%;
       margin-bottom: 10%;
+    
     }
 
     #buttonGenerateRandomNumber{
@@ -103,13 +104,13 @@ body{
     }
 
     #buttonGenerateRandomNumber:hover{
-      scale: 1.25;
+      scale: 1.1;
       transition: 0.1s ease-in;
 
     }
 
     #buttonGenerateRandomNumber:active{
-      scale: 1.5;
+      scale: 1.25;
       transition: 0.1s ease-in;
 
     }
@@ -175,7 +176,7 @@ body{
       background: #000;
       padding: 10px;
       border: 0;
-      margin-top: 7%;
+      margin-top: 3%;
       transition: 0.1s ease-in;
     
     }
@@ -194,15 +195,58 @@ body{
 
     #outputRandomNameFromList{
       text-align: center;
-      margin-top: 5%;
-      font-size: 30px;
+      margin-top: 3%;
+      font-size: 25px;
     }
 
-    /*#innerBox{
-      height: 85%;
-      margin: 10% 10%;
-      border: solid 1px;
-    }*/
+    #kopfOderZahl{
+      margin-top: 5%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+
+    }
+
+    #titleKopfOderZahl{
+      font-size: 20px;
+      font-weight: 700;
+
+    }
+
+    #bitcoin{
+      width: 100px;
+      height: auto;
+      text-align: center;
+      margin-top: 15%;
+      margin-bottom: 10%;
+
+    }
+
+    #buttonGetKopfOderZahl{
+      border-radius: 5px;
+      color: white;
+      background: red;
+      padding: 10px;
+      border: 0;
+      margin-bottom: 30px;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonGetKopfOderZahl:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGetKopfOderZahl:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputKopfOderZahl{
+      font-size: 30px;
+
+    }
 
     @media only screen and (max-width: 1366px) {
       #appArea{

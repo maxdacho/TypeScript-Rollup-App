@@ -1,11 +1,15 @@
 //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
 
 //Importieren von Funktionen und  Elementen aus anderen Modulen
-import { buttonGenerateRandomNumber, buttonOutputFieldGiveNamesToList, buttonGetRandomNameFromList } from "./domElements";
+import { buttonGenerateRandomNumber, buttonOutputFieldGiveNamesToList, buttonGetRandomNameFromList, buttonGetKopfOderZahl } from "./domElements";
 import { generateRandomNumber } from "./generateRandomNumber";
+import { kopfOderZahl } from "./kopfOderZahl";
 import { getNameFromInputAddToList, getRandomNameFromList } from "./listOfNames";
 
-
+//Button generiert 0 oder 1 für die Kopf oder Zahl Funktionalität
+buttonGetKopfOderZahl.addEventListener("click", function(){
+    kopfOderZahl();
+});
 
 //Button generiert Zufallszahl durch Funktionsaufruf
 buttonGenerateRandomNumber.addEventListener("click", function(){

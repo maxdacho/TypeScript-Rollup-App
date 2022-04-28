@@ -11,6 +11,9 @@
     //Elemente zur Ausgabe eines zufälligen Namens aus der zuvor erstellten Liste
     let outputFieldRandomNameFromList = document.getElementById('outputRandomNameFromList');
     let buttonGetRandomNameFromList = document.getElementById('buttonGetRandomNameFromList');
+    //Elemente für die Kopf oder Zahl Ausgabe
+    let outputFieldKopfOderZahl = document.getElementById('outputKopfOderZahl');
+    let buttonGetKopfOderZahl = document.getElementById('buttonGetKopfOderZahl');
 
     //Funktion die Zufallszahl generiert
     function generateRandomNumber() {
@@ -19,6 +22,11 @@
         else {
             outputFieldRandomNumber.innerHTML = `${randomNumber}`;
         }
+    }
+
+    function kopfOderZahl() {
+        let randomNumberKopfOderZahl = Math.round(Math.random());
+        outputFieldKopfOderZahl.innerHTML = `${randomNumberKopfOderZahl}`;
     }
 
     let arrayNamesFromList = [];
@@ -42,6 +50,10 @@
     }
 
     //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
+    //Button generiert 0 oder 1 für die Kopf oder Zahl Funktionalität
+    buttonGetKopfOderZahl.addEventListener("click", function () {
+        kopfOderZahl();
+    });
     //Button generiert Zufallszahl durch Funktionsaufruf
     buttonGenerateRandomNumber.addEventListener("click", function () {
         generateRandomNumber();

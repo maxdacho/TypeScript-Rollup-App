@@ -11,5 +11,8 @@ let buttonOutputFieldGiveNamesToList = document.getElementById('buttonPutNameToL
 let outputFieldRandomNameFromList = document.getElementById('outputRandomNameFromList') as HTMLElement;
 let buttonGetRandomNameFromList = document.getElementById('buttonGetRandomNameFromList') as HTMLButtonElement;
 
+//Elemente für die Kopf oder Zahl Ausgabe
+let outputFieldKopfOderZahl = document.getElementById('outputKopfOderZahl') as HTMLElement;
+let buttonGetKopfOderZahl = document.getElementById('buttonGetKopfOderZahl') as HTMLButtonElement;
 
-export{outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList};
+export{outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList, outputFieldKopfOderZahl, buttonGetKopfOderZahl};

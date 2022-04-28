@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body{
     background-image: url('images/AdobeStock_409378433.jpeg');
     background-repeat: repeat;
@@ -9,6 +12,9 @@ body{
     position: relative;
     text-align: center;
     margin-top: 50vh;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    font-size: 80px;
     }
 
     #headline.isLoaded{
@@ -63,11 +69,62 @@ body{
       
     }
 
-    #innerBox{
+    #playCard1{
+      width: 30px;
+      height: auto;
+      float: right;
+
+    }
+
+    #playCard2{
+      width: 30px;
+      height: auto;
+      float: left;
+
+    }
+
+    #wuerfel{
+      width: 100px;
+      height: auto;
+      text-align: center;
+      margin-top: 30%;
+      margin-bottom: 10%;
+    }
+
+    #buttonGenerateRandomNumber{
+      border-radius: 5px;
+      color: white;
+      background: red;
+      padding: 10px;
+      border: 0;
+      margin-bottom: 30px;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonGenerateRandomNumber:hover{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGenerateRandomNumber:active{
+      scale: 1.5;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputRandomNumber{
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 30px;     
+
+    }
+
+    /*#innerBox{
       height: 85%;
       margin: 10% 10%;
       border: solid 1px;
-    }
+    }*/
 
     @media only screen and (max-width: 1366px) {
       #appArea{

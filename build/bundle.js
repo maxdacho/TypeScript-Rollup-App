@@ -3,7 +3,7 @@
 
     // Elemente zur Ausgabe einer Zufallszahl
     let outputFieldRandomNumber = document.getElementById('outputRandomNumber');
-    let buttonGenerateRandomNumber = document.getElementById('generateRandomNumber');
+    let buttonGenerateRandomNumber = document.getElementById('buttonGenerateRandomNumber');
     //Elemente zur Erstellung einer Liste mit Namen nach User Eingabe
     let inputFieldGiveNames = document.getElementById('addName');
     let outputFieldNamesFromUserEntry = document.getElementById('outputNamesFromList');
@@ -14,8 +14,11 @@
 
     //Funktion die Zufallszahl generiert
     function generateRandomNumber() {
-        let randomNumber = Math.round(Math.random() * 10);
-        outputFieldRandomNumber.innerHTML = `${randomNumber}`;
+        let randomNumber = Math.round(Math.random() * 6);
+        if (randomNumber == 0) ;
+        else {
+            outputFieldRandomNumber.innerHTML = `${randomNumber}`;
+        }
     }
 
     let arrayNamesFromList = [];

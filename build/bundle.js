@@ -25,9 +25,14 @@
     //Funktion die Namen aus der Eingabe in eine Liste speichert
     function getNameFromInputAddToList() {
         let divOutputFieldNames = document.createElement('div');
-        divOutputFieldNames.innerHTML = inputFieldGiveNames.value;
-        outputFieldNamesFromUserEntry.appendChild(divOutputFieldNames);
-        arrayNamesFromList.push(inputFieldGiveNames.value);
+        if (arrayNamesFromList.length == 7) {
+            return 0;
+        }
+        else {
+            divOutputFieldNames.innerHTML = inputFieldGiveNames.value;
+            outputFieldNamesFromUserEntry.appendChild(divOutputFieldNames);
+            arrayNamesFromList.push(inputFieldGiveNames.value);
+        }
     }
     //Funktion die einen zufälligen Namen aus der zuvor erstellen Liste auswählt
     function getRandomNameFromList() {

@@ -5,9 +5,15 @@ let arrayNamesFromList : string[] = [];
 //Funktion die Namen aus der Eingabe in eine Liste speichert
 function getNameFromInputAddToList(){
     let divOutputFieldNames = document.createElement('div') as HTMLElement;
+    if (arrayNamesFromList.length ==7){
+        return 0;
+    }
+    else{
     divOutputFieldNames.innerHTML = inputFieldGiveNames.value;
     outputFieldNamesFromUserEntry.appendChild(divOutputFieldNames);
-    arrayNamesFromList.push(inputFieldGiveNames.value); 
+    arrayNamesFromList.push(inputFieldGiveNames.value);
+    
+    } 
     
 }
 

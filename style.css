@@ -120,6 +120,84 @@ body{
 
     }
 
+    #appNamensauslosung{
+      margin-top: 5%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    #titleNamensauslosung{
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    #additionalTextForNamensauslosung{
+      font-size: 10px;
+      font-weight: 200;
+
+    }
+
+    #addName{
+      margin: 3% 0;
+      border-radius: 5px;
+      border: 2px solid #000;
+    }
+
+    #buttonPutNameToList{
+      border-radius: 5px;
+      color: white;
+      background: #000;
+      padding: 10px;
+      border: 0;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonPutNameToList:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonPutNameToList:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputNamesFromList{
+      text-align: center;
+      font-size: 10px;   
+    }
+
+    #buttonGetRandomNameFromList{
+      border-radius: 5px;
+      color: white;
+      background: #000;
+      padding: 10px;
+      border: 0;
+      margin-top: 7%;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonGetRandomNameFromList:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGetRandomNameFromList:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputRandomNameFromList{
+      text-align: center;
+      margin-top: 5%;
+      font-size: 30px;
+    }
+
     /*#innerBox{
       height: 85%;
       margin: 10% 10%;

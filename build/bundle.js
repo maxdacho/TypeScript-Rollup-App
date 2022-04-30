@@ -14,6 +14,10 @@
     //Elemente für die Kopf oder Zahl Ausgabe
     let outputFieldKopfOderZahl = document.getElementById('outputKopfOderZahl');
     let buttonGetKopfOderZahl = document.getElementById('buttonGetKopfOderZahl');
+    //Elemente für die Zufallsfarbe 
+    let outputFieldRandomColorCode = document.getElementById('outputRandomColorCode');
+    let outputFieldRandomColor = document.getElementById('outputRandomColor');
+    let buttonGetRandomColor = document.getElementById('buttonGenerateRandomColor');
 
     //Funktion die Zufallszahl generiert
     function generateRandomNumber() {
@@ -26,7 +30,12 @@
 
     function kopfOderZahl() {
         let randomNumberKopfOderZahl = Math.round(Math.random());
-        outputFieldKopfOderZahl.innerHTML = `${randomNumberKopfOderZahl}`;
+        if (randomNumberKopfOderZahl == 0) {
+            outputFieldKopfOderZahl.innerHTML = "Kopf";
+        }
+        else {
+            outputFieldKopfOderZahl.innerHTML = "Zahl";
+        }
     }
 
     let arrayNamesFromList = [];
@@ -49,11 +58,19 @@
         outputFieldRandomNameFromList.innerHTML = `${arrayNamesFromList[randomNumberForNamesFromList]}`;
     }
 
+    function generateRandomColor() {
+        let randomNumberForRGBValue1 = Math.round(Math.random() * 255);
+        let randomNumberForRGBValue2 = Math.round(Math.random() * 255);
+        let randomNumberForRGBValue3 = Math.round(Math.random() * 255);
+        let randomNumberForRGBAValue = Math.round(Math.random() * 100);
+        let dividedRGBAValue = randomNumberForRGBAValue / 100;
+        let numberForColors = [];
+        numberForColors = [randomNumberForRGBValue1, randomNumberForRGBValue2, randomNumberForRGBValue3, dividedRGBAValue];
+        outputFieldRandomColor.style.backgroundColor = `rgba(${numberForColors})`;
+        outputFieldRandomColorCode.innerHTML = `${numberForColors}`;
+    }
+
     //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
-    //Button generiert 0 oder 1 für die Kopf oder Zahl Funktionalität
-    buttonGetKopfOderZahl.addEventListener("click", function () {
-        kopfOderZahl();
-    });
     //Button generiert Zufallszahl durch Funktionsaufruf
     buttonGenerateRandomNumber.addEventListener("click", function () {
         generateRandomNumber();
@@ -65,6 +82,14 @@
     //Button gibt einen zufälligen Namen aus der zuvor erstellten Liste aus
     buttonGetRandomNameFromList.addEventListener("click", function () {
         getRandomNameFromList();
+    });
+    //Button generiert 0 oder 1 für die Kopf oder Zahl Funktionalität
+    buttonGetKopfOderZahl.addEventListener("click", function () {
+        kopfOderZahl();
+    });
+    //Button generiert Zufallsfarbe durch Funktionsaufruf
+    buttonGetRandomColor.addEventListener("click", function () {
+        generateRandomColor();
     });
 
 })();

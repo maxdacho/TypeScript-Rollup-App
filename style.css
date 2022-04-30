@@ -83,6 +83,11 @@ body{
 
     }
 
+    #appWuerfel{
+      font-family: 'Plus Jakarta Sans', sans-serif;
+
+    }
+
     #wuerfel{
       width: 100px;
       height: auto;
@@ -116,7 +121,6 @@ body{
     }
 
     #outputRandomNumber{
-      font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 30px;     
 
     }
@@ -166,8 +170,8 @@ body{
     }
 
     #outputNamesFromList{
-      text-align: center;
-      font-size: 10px;   
+      font-size: 10px;
+
     }
 
     #buttonGetRandomNameFromList{
@@ -194,12 +198,12 @@ body{
     }
 
     #outputRandomNameFromList{
-      text-align: center;
       margin-top: 3%;
       font-size: 25px;
+    
     }
 
-    #kopfOderZahl{
+    #appKopfOderZahl{
       margin-top: 5%;
       font-family: 'Plus Jakarta Sans', sans-serif;
 
@@ -246,6 +250,26 @@ body{
     #outputKopfOderZahl{
       font-size: 30px;
 
+    }
+
+    #appZufallsfarbe{
+      margin-top: 5%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      
+    }
+
+    #titleZufallsfarbe{
+      font-size: 20px;
+      font-weight: 700;
+
+    }
+
+    #outputRandomColor{
+      width: 150px;
+      height: 150px;
+      margin: 10% 21%;
+      border-radius: 5px;
+      
     }
 
     @media only screen and (max-width: 1366px) {

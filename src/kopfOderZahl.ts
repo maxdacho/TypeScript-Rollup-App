@@ -2,7 +2,12 @@ import { outputFieldKopfOderZahl } from "./domElements";
 
 function kopfOderZahl(){
     let randomNumberKopfOderZahl : number = Math.round(Math.random());
-    outputFieldKopfOderZahl.innerHTML = `${randomNumberKopfOderZahl}`;
+    if(randomNumberKopfOderZahl==0){
+        outputFieldKopfOderZahl.innerHTML = "Kopf";
+    }
+    else{
+    outputFieldKopfOderZahl.innerHTML = "Zahl";
+    }
 
 }
 

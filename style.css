@@ -264,12 +264,45 @@ body{
 
     }
 
-    #outputRandomColor{
-      width: 150px;
-      height: 150px;
-      margin: 10% 21%;
+    #additionalTextForZufallsfarbe{
+      font-size: 10px;
+      font-weight: 200;
+
+    }
+
+    #buttonGenerateRandomColor{
       border-radius: 5px;
-      
+      color: white;
+      background: #000;
+      padding: 10px;
+      border: 0;
+      transition: 0.1s ease-in;
+      margin-top: 10px;
+    }
+
+    #buttonGenerateRandomColor:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGenerateRandomColor:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputRandomColor{
+      width: 100px;
+      height: 100px;
+      margin: 10% 30%;
+      border-radius: 5px;
+
+    }
+
+    #outputRandomColorCode{
+      font-size: 30px;
+
     }
 
     @media only screen and (max-width: 1366px) {

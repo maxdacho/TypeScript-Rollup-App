@@ -129,6 +129,7 @@ body{
     #appNamensauslosung{
       margin-top: 5%;
       font-family: 'Plus Jakarta Sans', sans-serif;
+
     }
 
     #titleNamensauslosung{
@@ -303,6 +304,74 @@ body{
 
     #outputRandomColorCode{
       font-size: 30px;
+
+    }
+
+    #aboutMe{
+      margin-top: 15%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-align: left;
+      font-size: 25px;
+
+    }
+
+    #headlineAboutMe{
+      font-family: 'Lobster', cursive;
+      margin-bottom: 10%;
+      font-size: 30px;
+      color: #C60000;
+
+    }
+
+    #sources{
+      margin-top: 15%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-align: left;
+      font-size: 25px;
+      text-decoration: none;
+
+    }
+
+    #sources a:hover{
+      color: rgb(81, 81, 255);
+      text-decoration: underline;
+
+    }
+
+    #sources a:active{
+      text-decoration: none;
+      
+    }
+
+    #sources a:visited{
+      text-decoration: none;
+      
+    }
+
+    #headlineSources{
+      font-size: 30px;
+      margin-bottom: 10%;
+
+    }
+
+    #logoGitHub{
+      width: 50%;
+      height: auto;
+      transition: 0.1s ease-in;
+
+    }
+
+    #logoGitHub:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #logoOnlinemedien{
+      width: 60%;
+      height: auto;
+      margin-top: 20%;
+      float: right;
 
     }
 

@@ -40,13 +40,14 @@ body{
     }
 
     #appArea2{
-      margin-top: 550px;
+      margin-top: 750px;
       margin-bottom: 1000px;
       text-align: center;
       position: relative;
       opacity: 0;
       margin-left: 350px;
       margin-right: 350px;
+
     }
 
     #appArea2.isLoaded2{
@@ -315,6 +316,7 @@ body{
       #appArea2{
         margin-left: 150px;
         margin-right: 150px;
+        margin-top: 550px;
       
       }
 
@@ -324,6 +326,7 @@ body{
       }
     
     }
+
 
    
     

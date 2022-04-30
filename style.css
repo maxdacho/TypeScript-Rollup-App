@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    background-image: url('images/AdobeStock_409378433.jpeg');
+    background-repeat: repeat;
+    background-size: 100vw;
+
+    }
+
+  #headline {
+    position: relative;
+    text-align: center;
+    margin-top: 50vh;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    font-size: 80px;
+    }
+
+    #headline.isLoaded{
+        transition: all 2s;
+        transition-delay: 0s;
+        margin-top: 20px;
+    }
+
+  #appArea{
+      margin-top: 100px;
+      text-align: center;
+      position: relative;
+      opacity: 0;
+      margin-left: 350px;
+      margin-right: 350px;
+    }
+
+    #appArea.isLoaded{
+        transition: all 3s;
+        transition-delay: 1s;
+        opacity: 1;
+      
+    }
+
+    #appArea2{
+      margin-top: 750px;
+      margin-bottom: 1000px;
+      text-align: center;
+      position: relative;
+      opacity: 0;
+      margin-left: 350px;
+      margin-right: 350px;
+
+    }
+
+    #appArea2.isLoaded2{
+        transition: all 3s;
+        transition-delay: 1s;
+        opacity: 1;
+      
+    }
+
+    #appBox{
+      float: left;
+      width: 31%;
+      height: 550px;
+      margin-left: 1%;
+      margin-right: 1%;
+      padding: 20px;
+      background: #fff;
+      box-sizing: border-box;
+      border-radius: 5px;
+      
+    }
+
+    #playCard1{
+      width: 30px;
+      height: auto;
+      float: right;
+
+    }
+
+    #playCard2{
+      width: 30px;
+      height: auto;
+      float: left;
+
+    }
+
+    #appWuerfel{
+      font-family: 'Plus Jakarta Sans', sans-serif;
+
+    }
+
+    #wuerfel{
+      width: 100px;
+      height: auto;
+      text-align: center;
+      margin-top: 30%;
+      margin-bottom: 10%;
+    
+    }
+
+    #buttonGenerateRandomNumber{
+      border-radius: 5px;
+      color: white;
+      background: red;
+      padding: 10px;
+      border: 0;
+      margin-bottom: 30px;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonGenerateRandomNumber:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGenerateRandomNumber:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputRandomNumber{
+      font-size: 30px;     
+
+    }
+
+    #appNamensauslosung{
+      margin-top: 5%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    #titleNamensauslosung{
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    #additionalTextForNamensauslosung{
+      font-size: 10px;
+      font-weight: 200;
+
+    }
+
+    #addName{
+      margin: 3% 0;
+      border-radius: 5px;
+      border: 2px solid #000;
+    }
+
+    #buttonPutNameToList{
+      border-radius: 5px;
+      color: white;
+      background: #000;
+      padding: 10px;
+      border: 0;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonPutNameToList:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonPutNameToList:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputNamesFromList{
+      font-size: 10px;
+
+    }
+
+    #buttonGetRandomNameFromList{
+      border-radius: 5px;
+      color: white;
+      background: #000;
+      padding: 10px;
+      border: 0;
+      margin-top: 3%;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonGetRandomNameFromList:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGetRandomNameFromList:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputRandomNameFromList{
+      margin-top: 3%;
+      font-size: 25px;
+    
+    }
+
+    #appKopfOderZahl{
+      margin-top: 5%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+
+    }
+
+    #titleKopfOderZahl{
+      font-size: 20px;
+      font-weight: 700;
+
+    }
+
+    #bitcoin{
+      width: 100px;
+      height: auto;
+      text-align: center;
+      margin-top: 15%;
+      margin-bottom: 10%;
+
+    }
+
+    #buttonGetKopfOderZahl{
+      border-radius: 5px;
+      color: white;
+      background: red;
+      padding: 10px;
+      border: 0;
+      margin-bottom: 30px;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonGetKopfOderZahl:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGetKopfOderZahl:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputKopfOderZahl{
+      font-size: 30px;
+
+    }
+
+    #appZufallsfarbe{
+      margin-top: 5%;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      
+    }
+
+    #titleZufallsfarbe{
+      font-size: 20px;
+      font-weight: 700;
+
+    }
+
+    #additionalTextForZufallsfarbe{
+      font-size: 10px;
+      font-weight: 200;
+
+    }
+
+    #buttonGenerateRandomColor{
+      border-radius: 5px;
+      color: white;
+      background: #000;
+      padding: 10px;
+      border: 0;
+      transition: 0.1s ease-in;
+      margin-top: 10px;
+    }
+
+    #buttonGenerateRandomColor:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonGenerateRandomColor:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #outputRandomColor{
+      width: 100px;
+      height: 100px;
+      margin: 10% 30%;
+      border-radius: 5px;
+
+    }
+
+    #outputRandomColorCode{
+      font-size: 30px;
+
+    }
+
+    @media only screen and (max-width: 1366px) {
+      #appArea{
+        margin-left: 150px;
+        margin-right: 150px;
+      
+      }
+
+      #appArea2{
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 550px;
+      
+      }
+
+      #appBox{
+        height: 400px;
+     
+      }
+    
+    }
+
+
+   
+    
+  

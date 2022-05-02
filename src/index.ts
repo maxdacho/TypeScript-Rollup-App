@@ -1,10 +1,10 @@
 //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
 
 //Importieren von Funktionen und  Elementen aus anderen Modulen
-import { buttonGenerateRandomNumber, buttonOutputFieldGiveNamesToList, buttonGetRandomNameFromList, buttonGetKopfOderZahl, buttonGetRandomColor } from "./domElements";
+import { buttonGenerateRandomNumber, buttonOutputFieldGiveNamesToList, buttonGetRandomNameFromList, buttonGetKopfOderZahl, buttonGetRandomColor, buttonResetList } from "./domElements";
 import { generateRandomNumber } from "./generateRandomNumber";
 import { kopfOderZahl } from "./kopfOderZahl";
-import { getNameFromInputAddToList, getRandomNameFromList } from "./listOfNames";
+import { getNameFromInputAddToList, getRandomNameFromList, resetInput } from "./listOfNames";
 import { generateRandomColor } from "./randomColor";
 
 
@@ -16,6 +16,11 @@ buttonGenerateRandomNumber.addEventListener("click", function(){
 //Button fügt Namen einer Liste hinzu die zuvor vom User eingegeben wurden
 buttonOutputFieldGiveNamesToList.addEventListener("click", function(){
     getNameFromInputAddToList();
+});
+
+//Button setzt die Liste zurück
+buttonResetList.addEventListener("click", function(){
+    resetInput();
 });
 
 //Button gibt einen zufälligen Namen aus der zuvor erstellten Liste aus
@@ -32,5 +37,7 @@ buttonGetKopfOderZahl.addEventListener("click", function(){
 buttonGetRandomColor.addEventListener("click", function(){
     generateRandomColor();
 });
+
+
 
 

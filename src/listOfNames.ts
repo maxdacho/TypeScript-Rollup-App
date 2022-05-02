@@ -1,12 +1,14 @@
 import { inputFieldGiveNames, outputFieldNamesFromUserEntry, outputFieldRandomNameFromList } from "./domElements";
 
+let divOutputFieldNames : HTMLElement;
 let arrayNamesFromList : string[] = [];
 
 //Funktion die Namen aus der Eingabe in eine Liste speichert
 function getNameFromInputAddToList(){
-    let divOutputFieldNames = document.createElement('div') as HTMLElement;
+    divOutputFieldNames = document.createElement('div') as HTMLElement;
     if (arrayNamesFromList.length ==7){
         return 0;
+
     }
     else{
     divOutputFieldNames.innerHTML = inputFieldGiveNames.value;
@@ -25,4 +27,14 @@ function getRandomNameFromList(){
     
 }
 
-export{getNameFromInputAddToList, getRandomNameFromList};
+function resetInput(){
+    inputFieldGiveNames.value = "";
+    arrayNamesFromList = [];
+    outputFieldNamesFromUserEntry.innerHTML = `${arrayNamesFromList}`;
+    outputFieldRandomNameFromList. innerHTML = "";
+
+
+
+}
+
+export{getNameFromInputAddToList, getRandomNameFromList, resetInput};

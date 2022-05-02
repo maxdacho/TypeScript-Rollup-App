@@ -8,6 +8,7 @@
     let inputFieldGiveNames = document.getElementById('addName');
     let outputFieldNamesFromUserEntry = document.getElementById('outputNamesFromList');
     let buttonOutputFieldGiveNamesToList = document.getElementById('buttonPutNameToList');
+    let buttonResetList = document.getElementById('buttonReset');
     //Elemente zur Ausgabe eines zufälligen Namens aus der zuvor erstellten Liste
     let outputFieldRandomNameFromList = document.getElementById('outputRandomNameFromList');
     let buttonGetRandomNameFromList = document.getElementById('buttonGetRandomNameFromList');
@@ -38,10 +39,11 @@
         }
     }
 
+    let divOutputFieldNames;
     let arrayNamesFromList = [];
     //Funktion die Namen aus der Eingabe in eine Liste speichert
     function getNameFromInputAddToList() {
-        let divOutputFieldNames = document.createElement('div');
+        divOutputFieldNames = document.createElement('div');
         if (arrayNamesFromList.length == 7) {
             return 0;
         }
@@ -56,6 +58,12 @@
         let newArray = arrayNamesFromList.slice(0, -1);
         let randomNumberForNamesFromList = Math.round(Math.random() * newArray.length);
         outputFieldRandomNameFromList.innerHTML = `${arrayNamesFromList[randomNumberForNamesFromList]}`;
+    }
+    function resetInput() {
+        inputFieldGiveNames.value = "";
+        arrayNamesFromList = [];
+        outputFieldNamesFromUserEntry.innerHTML = `${arrayNamesFromList}`;
+        outputFieldRandomNameFromList.innerHTML = "";
     }
 
     function generateRandomColor() {
@@ -78,6 +86,10 @@
     //Button fügt Namen einer Liste hinzu die zuvor vom User eingegeben wurden
     buttonOutputFieldGiveNamesToList.addEventListener("click", function () {
         getNameFromInputAddToList();
+    });
+    //Button setzt die Liste zurück
+    buttonResetList.addEventListener("click", function () {
+        resetInput();
     });
     //Button gibt einen zufälligen Namen aus der zuvor erstellten Liste aus
     buttonGetRandomNameFromList.addEventListener("click", function () {

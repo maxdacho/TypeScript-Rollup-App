@@ -6,6 +6,7 @@ let buttonGenerateRandomNumber = document.getElementById('buttonGenerateRandomNu
 let inputFieldGiveNames = document.getElementById('addName') as HTMLInputElement;
 let outputFieldNamesFromUserEntry = document.getElementById('outputNamesFromList') as HTMLElement;
 let buttonOutputFieldGiveNamesToList = document.getElementById('buttonPutNameToList') as HTMLButtonElement;
+let buttonResetList = document.getElementById('buttonReset') as HTMLButtonElement;
 
 //Elemente zur Ausgabe eines zufälligen Namens aus der zuvor erstellten Liste
 let outputFieldRandomNameFromList = document.getElementById('outputRandomNameFromList') as HTMLElement;
@@ -20,4 +21,4 @@ let outputFieldRandomColorCode = document.getElementById('outputRandomColorCode'
 let outputFieldRandomColor = document.getElementById('outputRandomColor') as HTMLElement;
 let buttonGetRandomColor = document.getElementById('buttonGenerateRandomColor') as HTMLButtonElement;
 
-export{outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList, outputFieldKopfOderZahl, buttonGetKopfOderZahl, outputFieldRandomColorCode, outputFieldRandomColor, buttonGetRandomColor };
+export{ outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList, outputFieldKopfOderZahl, buttonGetKopfOderZahl, outputFieldRandomColorCode, outputFieldRandomColor, buttonGetRandomColor, buttonResetList };

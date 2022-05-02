@@ -153,6 +153,7 @@ body{
       border-radius: 5px;
       color: white;
       background: #000;
+      margin: 0% 3%;
       padding: 10px;
       border: 0;
       transition: 0.1s ease-in;
@@ -166,6 +167,29 @@ body{
     }
 
     #buttonPutNameToList:active{
+      scale: 1.25;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonReset{
+      border-radius: 5px;
+      color: white;
+      background: #000;
+      margin: 0% 3%;
+      padding: 10px;
+      border: 0;
+      transition: 0.1s ease-in;
+    
+    }
+
+    #buttonReset:hover{
+      scale: 1.1;
+      transition: 0.1s ease-in;
+
+    }
+
+    #buttonReset:active{
       scale: 1.25;
       transition: 0.1s ease-in;
 

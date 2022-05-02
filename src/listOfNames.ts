@@ -32,7 +32,6 @@ function resetInput(){
     arrayNamesFromList = [];
     outputFieldNamesFromUserEntry.innerHTML = `${arrayNamesFromList}`;
     outputFieldRandomNameFromList. innerHTML = "";
-    console.log("Hi");
 
 }
 

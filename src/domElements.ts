@@ -21,4 +21,4 @@ let outputFieldRandomColorCode = document.getElementById('outputRandomColorCode'
 let outputFieldRandomColor = document.getElementById('outputRandomColor') as HTMLElement;
 let buttonGetRandomColor = document.getElementById('buttonGenerateRandomColor') as HTMLButtonElement;
 
-export{ outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList, outputFieldKopfOderZahl, buttonGetKopfOderZahl, outputFieldRandomColorCode, outputFieldRandomColor, buttonGetRandomColor, buttonResetList };
+export { outputFieldRandomNumber, buttonGenerateRandomNumber, inputFieldGiveNames, outputFieldNamesFromUserEntry, buttonOutputFieldGiveNamesToList, outputFieldRandomNameFromList, buttonGetRandomNameFromList, outputFieldKopfOderZahl, buttonGetKopfOderZahl, outputFieldRandomColorCode, outputFieldRandomColor, buttonGetRandomColor, buttonResetList };

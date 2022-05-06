@@ -2,125 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zufalls App</title>
-    <script defer src="./build/bundle.js"></script>
-    <script defer src="animation.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zufalls App</title>
+        <script defer src="./build/bundle.js"></script>
+        <script defer src="animation.js"></script>
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
-    
-    <h1 id="headline">Zufalls App</h1>
-        
+
+
+        <h1 id="headline">Zufalls App</h1>
+
         <div id="appArea">
 
-            <div id="appBox">
-                
-                    <img src="images/spielfigur_1.png" id="playCard1">
-                    <img src="images/spielfigur_1.png" id="playCard2">
-                    <div id="appWuerfel">
-                    <img src="images/wuerfel.png" id="wuerfel">
-                    <br>
-                    <button id="buttonGenerateRandomNumber">Würfeln!</button>
-                    <br>
-                    <div id="outputRandomNumber"></div>
-                    </div>
-                
-            </div>
+                <div id="appBox">
 
-            <div id="appBox">
-                
-                    <img src="images/spielfigur_2.png" id="playCard1">
-                    <img src="images/spielfigur_2.png" id="playCard2">
-                    <br>
-                    <div id="appNamensauslosung">
-                    <label for="addName" id="titleNamensauslosung">Namensauslosung</label>
-            <br>
-                        <p id="additionalTextForNamensauslosung">Es können maximal sieben Namen eingetragen werden.</p>
-                    <input type="text" id="addName" name="addName" placeholder="Tage hier einen Namen ein">
-                    <button id="buttonPutNameToList">Hinzufügen</button>
-                    <button id="buttonReset">Zurücksetzen</button>
-            <p></p>
-                    <div id="outputNamesFromList"></div>
-                    <button id="buttonGetRandomNameFromList">Zufällige Auswahl</button>
-                    <div id="outputRandomNameFromList"></div>
-                    
-                </div>
-            </div>
+                        <img src="images/spielfigur_1.png" id="playCard1">
+                        <img src="images/spielfigur_1.png" id="playCard2">
+                        <div id="appWuerfel">
+                                <img src="images/wuerfel.png" id="wuerfel">
+                                <br>
+                                <button id="buttonGenerateRandomNumber">Würfeln!</button>
+                                <br>
+                                <div id="outputRandomNumber"></div>
+                        </div>
 
-            <div id="appBox">
-                
-                    <img src="images/spielfigur_3.png" id="playCard1">
-                    <img src="images/spielfigur_3.png" id="playCard2">
-                    <br>
-                    <div id="appKopfOderZahl">
-                    <label id="titleKopfOderZahl">Kopf oder Zahl</label>
-            <br>
-                    <img src="images/bitcoin.png" id="bitcoin">
-            <br>
-                    <button id ="buttonGetKopfOderZahl">Kopf oder Zahl?</button>
-                    <div id="outputKopfOderZahl"></div>
                 </div>
-            </div>
+
+                <div id="appBox">
+
+                        <img src="images/spielfigur_2.png" id="playCard1">
+                        <img src="images/spielfigur_2.png" id="playCard2">
+                        <br>
+                        <div id="appNamensauslosung">
+                                <label for="addName" id="titleNamensauslosung">Namensauslosung</label>
+                                <br>
+                                <p id="additionalTextForNamensauslosung">Es können maximal sieben Namen eingetragen
+                                        werden.</p>
+                                <input type="text" id="addName" name="addName" placeholder="Tage hier einen Namen ein">
+                                <button id="buttonPutNameToList">Hinzufügen</button>
+                                <button id="buttonReset">Zurücksetzen</button>
+                                <p></p>
+                                <div id="outputNamesFromList"></div>
+                                <button id="buttonGetRandomNameFromList">Zufällige Auswahl</button>
+                                <div id="outputRandomNameFromList"></div>
+
+                        </div>
+                </div>
+
+                <div id="appBox">
+
+                        <img src="images/spielfigur_3.png" id="playCard1">
+                        <img src="images/spielfigur_3.png" id="playCard2">
+                        <br>
+                        <div id="appKopfOderZahl">
+                                <label id="titleKopfOderZahl">Kopf oder Zahl</label>
+                                <br>
+                                <img src="images/bitcoin.png" id="bitcoin">
+                                <br>
+                                <button id="buttonGetKopfOderZahl">Kopf oder Zahl?</button>
+                                <div id="outputKopfOderZahl"></div>
+                        </div>
+                </div>
 
         </div>
 
         <div id="appArea2">
-            
-            <div id="appBox">
-                    <img src="images/spielfigur_4.png" id="playCard1">
-                    <img src="images/spielfigur_4.png" id="playCard2">
-                    <br>
-                    <div id="appZufallsfarbe">
-                    <label id="titleZufallsfarbe">Zufallsfarbe</label>
-                    <br>
-                    <p id="additionalTextForZufallsfarbe">Unschlüssig über die Farbe deines nächsten Webprojektes?
-                            <br>Generiere einen zufälligen <b>rgba</b> Farbwert.
-                    </p>
-                    <button id="buttonGenerateRandomColor">Generiere Zufallsfarbe!</button>
-                    <div id="outputRandomColor"></div>
-                    <div id="outputRandomColorCode"></div>
-                    </div>
-            </div>
 
-            <div id="appBox">
-                    <img src="images/spielfigur_1.png" id="playCard1">
-                    <img src="images/spielfigur_1.png" id="playCard2">
-                    <br>
-                    <div id="aboutMe">
-                            <div id="headlineAboutMe">
-                                Zufalls App
-                            </div>
-                        erstellt von
+                <div id="appBox">
+                        <img src="images/spielfigur_4.png" id="playCard1">
+                        <img src="images/spielfigur_4.png" id="playCard2">
                         <br>
-                        <b>
-                        Maximilian Dacho
-                        <br>
-                        ON21
-                        </b>               
-                    </div>
-            </div>
+                        <div id="appZufallsfarbe">
+                                <label id="titleZufallsfarbe">Zufallsfarbe</label>
+                                <br>
+                                <p id="additionalTextForZufallsfarbe">Unschlüssig über die Farbe deines nächsten
+                                        Webprojektes?
+                                        <br>Generiere einen zufälligen <b>rgba</b> Farbwert.
+                                </p>
+                                <button id="buttonGenerateRandomColor">Generiere Zufallsfarbe!</button>
+                                <div id="outputRandomColor"></div>
+                                <div id="outputRandomColorCode"></div>
+                        </div>
+                </div>
 
-            <div id="appBox">
-                    <img src="images/spielfigur_2.png" id="playCard1">
-                    <img src="images/spielfigur_2.png" id="playCard2">
-                    <br>
-                    <div id="sources">
-                            <div id="headlineSources">
-                            <b>GitHub</b>
-                            </div>
-                            <a href="https://github.com/maxdacho/TypeScript-Rollup-App" target="blank">
-                            Das Projekt auf GitHub ansehen -->
-                            <br>
-                            <img src="images/GitHub-Emblem.png" id="logoGitHub">
-                            </a>
-                            <br>
-                            <img src="images/logo_onlinemedien.png" id="logoOnlinemedien">
-                    </div>
-            </div>
+                <div id="appBox">
+                        <img src="images/spielfigur_1.png" id="playCard1">
+                        <img src="images/spielfigur_1.png" id="playCard2">
+                        <br>
+                        <div id="aboutMe">
+                                <div id="headlineAboutMe">
+                                        Zufalls App
+                                </div>
+                                erstellt von
+                                <br>
+                                <b>
+                                        Maximilian Dacho
+                                        <br>
+                                        ON21
+                                </b>
+                        </div>
+                </div>
+
+                <div id="appBox">
+                        <img src="images/spielfigur_2.png" id="playCard1">
+                        <img src="images/spielfigur_2.png" id="playCard2">
+                        <br>
+                        <div id="sources">
+                                <div id="headlineSources">
+                                        <b>GitHub</b>
+                                </div>
+                                <a href="https://github.com/maxdacho/TypeScript-Rollup-App" target="blank">
+                                        Das Projekt auf GitHub ansehen -->
+                                        <br>
+                                        <img src="images/GitHub-Emblem.png" id="logoGitHub">
+                                </a>
+                                <br>
+                                <img src="images/logo_onlinemedien.png" id="logoOnlinemedien">
+                        </div>
+                </div>
 
         </div>
 

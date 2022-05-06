@@ -9,32 +9,32 @@ import { generateRandomColor } from "./randomColor";
 
 
 //Button generiert Zufallszahl durch Funktionsaufruf
-buttonGenerateRandomNumber.addEventListener("click", function(){
+buttonGenerateRandomNumber.addEventListener("click", function () {
     generateRandomNumber();
 });
 
 //Button fügt Namen einer Liste hinzu die zuvor vom User eingegeben wurden
-buttonOutputFieldGiveNamesToList.addEventListener("click", function(){
+buttonOutputFieldGiveNamesToList.addEventListener("click", function () {
     getNameFromInputAddToList();
 });
 
 //Button setzt die Liste zurück
-buttonResetList.addEventListener("click", function(){
+buttonResetList.addEventListener("click", function () {
     resetInput();
 });
 
 //Button gibt einen zufälligen Namen aus der zuvor erstellten Liste aus
-buttonGetRandomNameFromList.addEventListener("click", function(){
+buttonGetRandomNameFromList.addEventListener("click", function () {
     getRandomNameFromList();
 });
 
 //Button generiert 0 oder 1 für die Kopf oder Zahl Funktionalität
-buttonGetKopfOderZahl.addEventListener("click", function(){
+buttonGetKopfOderZahl.addEventListener("click", function () {
     kopfOderZahl();
 });
 
 //Button generiert Zufallsfarbe durch Funktionsaufruf
-buttonGetRandomColor.addEventListener("click", function(){
+buttonGetRandomColor.addEventListener("click", function () {
     generateRandomColor();
 });
 

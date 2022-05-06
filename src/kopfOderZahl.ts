@@ -1,14 +1,15 @@
 import { outputFieldKopfOderZahl } from "./domElements";
 
-function kopfOderZahl(){
-    let randomNumberKopfOderZahl : number = Math.round(Math.random());
-    if(randomNumberKopfOderZahl==0){
+//Funktion gibt zufällig Kopf oder Zahl aus
+function kopfOderZahl() {
+    let randomNumberKopfOderZahl: number = Math.round(Math.random());
+    if (randomNumberKopfOderZahl == 0) {
         outputFieldKopfOderZahl.innerHTML = "Kopf";
     }
-    else{
-    outputFieldKopfOderZahl.innerHTML = "Zahl";
+    else {
+        outputFieldKopfOderZahl.innerHTML = "Zahl";
     }
 
 }
 
-export{kopfOderZahl};
+export { kopfOderZahl };
